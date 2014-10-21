@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微讯</string>
+    <string name="action_settings">设置</string>
+    <string name="my_miniweb">我的微页</string>
+    <string name="new_miniweb">新建微页</string>
+    <string name="hot_miniweb">热门微页</string>
+    <string name="please_fill_out">请填写用户名/密码</string>
+    <string name="please_login">请登录!</string>
+    
+    <string name="MiniWeb.Title">主标题</string>
+    <string name="MiniWeb.Subtitle">副标题</string>
+    <string name="MiniWeb.PreView">预览</string>
+    <string name="MiniWeb.Share">分享</string>
+    <string name="MiniWeb.Add.Text">添加文字内容</string>
+    <string name="MiniWeb.Edit.Text">编辑文字内容</string>
+    
+    <string name="Menu.MiniWebCreata">微网页制作</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/E:/MyApplication/fax_utils/res/values-zh-rCN/strings_task.xml -->
+    <eat-comment />
+
+    <string name="Task.DoSuccess">操作成功</string>
+    <string name="Task.LoadFail">载入失败</string>
+    <string name="Task.PleaseWait">请稍候</string>
+    <!-- From: file:/E:/MyApplication/fax_utils/res/values-zh-rCN/strings_download_handler.xml -->
+    <eat-comment />
+
+    <string name="cannot_download" msgid="8150552478556798780">"只能从“http”或“https”网址下载。"</string>
+    <string name="download_no_sdcard_dlg_msg" msgid="2616399456116301518" product="default">"需要有 SD 卡才能下载"</string>
+    <string name="download_no_sdcard_dlg_title" msgid="605904452159416792" product="default">"无 SD 卡"</string>
+    <string name="download_pending" msgid="2599683668575349559">"正在开始下载₀"</string>
+    <string name="download_sdcard_busy_dlg_msg" msgid="2629425950473358591" product="default">"SD 卡正忙。要允许下载，请在通知中触摸“关闭 USB 存储设备”。"</string>
+    <string name="download_sdcard_busy_dlg_title" msgid="6877712666046917741" product="default">"SD 卡不可用"</string>
+    <!-- From: file:/E:/MyApplication/fax_utils/res/values-zh-rCN/strings_xlistview.xml -->
+    <eat-comment />
+
+    <string name="xlistview_footer_hint_nomore">加载完毕</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">加载中…</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_load_error">载入错误</string>
+
+</resources>

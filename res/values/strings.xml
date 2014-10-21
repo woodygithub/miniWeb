@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiniWeb</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_miniweb">My MiniWeb</string>
+    <string name="new_miniweb">New MiniWeb</string>
+    <string name="hot_miniweb">Hot MiniWeb</string>
+    <string name="please_fill_out">please fill out username/password</string>
+    <string name="please_login">please login</string>
+    
+    <string name="MiniWeb.Title">title</string>
+    <string name="MiniWeb.Subtitle">subTitle</string>
+    <string name="MiniWeb.PreView">preview</string>
+    <string name="MiniWeb.Share">share</string>
+    <string name="MiniWeb.Add.Text">add text</string>
+    <string name="MiniWeb.Edit.Text">edit text</string>
+    
+    <string name="Menu.MiniWebCreata">create miniweb</string>
+</resources>

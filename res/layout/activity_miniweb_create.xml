@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"
+	    android:orientation="vertical" >
+	    <EditText
+	        android:id="@+id/miniweb_title"
+	        android:hint="@string/MiniWeb.Title"
+	        android:background="@android:color/transparent"
+	        android:singleLine="true"
+	        android:textSize="24sp"
+	        android:paddingTop="4dp"
+	        android:textColor="@android:color/black"
+	        android:gravity="center"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"/>
+	    <View
+	        android:id="@+id/miniweb_title_div"
+	        style="@style/divHorizontal"
+	        android:layout_margin="10dp"/>
+	    <EditText
+	        android:id="@+id/miniweb_subtitle"
+	        android:hint="@string/MiniWeb.Subtitle"
+	        android:background="@android:color/transparent"
+	        android:singleLine="true"
+	        android:textSize="16sp"
+	        android:gravity="center"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"/>
+	    <TextView
+	        android:id="@+id/miniweb_title_data"
+	        android:textColor="@android:color/darker_gray"
+	        android:textSize="12sp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<ListView
+	    android:id="@android:id/list"
+	    android:divider="@android:color/transparent"
+	    android:padding="6dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" />
+	<LinearLayout
+		android:id="@+id/miniweb_add_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/dark_blue"
+		android:orientation="horizontal">
+		<ImageButton 
+			android:id="@+id/miniweb_add_text"
+			android:src="@drawable/miniweb_ic_text"
+			android:background="@drawable/btn_bg_whitebg"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:padding="10dp"
+		    android:layout_height="wrap_content"/>
+	    <ImageButton 
+	    android:id="@+id/miniweb_add_img_local"
+	        android:src="@drawable/miniweb_ic_img_local"
+	    android:background="@drawable/btn_bg_whitebg"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:padding="10dp"
+		    android:layout_height="wrap_content"/>
+	    <ImageButton 
+			android:id="@+id/miniweb_add_camera"
+	        android:src="@drawable/miniweb_ic_img_camera"
+			android:background="@drawable/btn_bg_whitebg"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:padding="10dp"
+		    android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<ImageButton
+	    android:id="@+id/miniweb_add_content"
+	    android:visibility="gone"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/btn_bg_whitebg"
+	    android:src="@drawable/miniweb_btn_add" />
+
+</LinearLayout>
