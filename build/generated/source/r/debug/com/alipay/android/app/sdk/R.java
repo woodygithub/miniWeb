@@ -32,12 +32,12 @@ public final class R {
 		public static final int dialog_cut_line = 0x7f020007;
 		public static final int dialog_split_h = 0x7f020008;
 		public static final int dialog_split_v = 0x7f020009;
-		public static final int popup_bg = 0x7f02001e;
-		public static final int refresh = 0x7f02001f;
-		public static final int refresh_button = 0x7f020020;
-		public static final int refresh_push = 0x7f020021;
-		public static final int title = 0x7f020023;
-		public static final int title_background = 0x7f020024;
+		public static final int popup_bg = 0x7f02001f;
+		public static final int refresh = 0x7f020020;
+		public static final int refresh_button = 0x7f020021;
+		public static final int refresh_push = 0x7f020022;
+		public static final int title = 0x7f020025;
+		public static final int title_background = 0x7f020026;
 	}
 	public static final class id {
 		public static final int AlipayTitle = 0x7f09000b;

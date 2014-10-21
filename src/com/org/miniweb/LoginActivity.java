@@ -16,6 +16,8 @@ import com.org.miniweb.model.User;
 
 public class LoginActivity extends Activity {
 
+    final int REQCODE = 1;
+
 	public static void strart(Activity activity){
 		activity.startActivity(new Intent().setClass(activity, LoginActivity.class));
 	}
@@ -52,10 +54,23 @@ public class LoginActivity extends Activity {
 	}
 	
 	public void registerClick(View v){
-		
+        RegisterActivity.start(this, REQCODE);
 	}
 	
 	public void ignoreClick(View v){
 		MainActivity.strart(this);
 	}
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == Activity.RESULT_OK) {
+            switch (requestCode) {
+                case REQCODE:
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 }
