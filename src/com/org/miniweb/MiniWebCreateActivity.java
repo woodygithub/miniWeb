@@ -101,10 +101,10 @@ public class MiniWebCreateActivity extends Activity {
 						}
 						zos.close();
 						FileBody imageBody=new FileBody(imageZip);
-						map.put("image", imageBody);
+						map.put("ff", imageBody);
 					}
 					
-					map.put("data", dataBody);
+					map.put("uid", dataBody);
 					String result = HttpUtils.reqForPost(MyApp.ApiUrl+"Articlinfo/prevew", map);
 					return new Gson().fromJson(result, StringData.class);
 				} catch (Exception e) {
@@ -177,20 +177,20 @@ public class MiniWebCreateActivity extends Activity {
 	
 	AdapterView.OnItemClickListener onItemClickListener=new AdapterView.OnItemClickListener() {
 		@Override
-		public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-			final MiniWebData.Content content=(Content) listView.getItemAtPosition(position);
-			if(!content.isImageType()){//文字
-				final EditText editText=new EditText(MiniWebCreateActivity.this);
-				editText.setText(content.getContent());
-				new AlertDialog.Builder(MiniWebCreateActivity.this).setTitle(R.string.MiniWeb_Edit_Text)
-					.setView(editText).setNegativeButton(android.R.string.cancel, null)
-					.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int which) {
-							content.setContent(editText.getText().toString());
-							mAdapter.notifyDataSetChanged();
-						}
-					}).create().show();
-			}
+		public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
+            final MiniWebData.Content content=(Content) listView.getItemAtPosition(position);
+            if(!content.isImageType()){//文字
+                final EditText editText=new EditText(MiniWebCreateActivity.this);
+                editText.setText(content.getContent());
+                new AlertDialog.Builder(MiniWebCreateActivity.this).setTitle(R.string.MiniWeb_Edit_Text)
+                    .setView(editText).setNegativeButton(android.R.string.cancel, null)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            content.setContent(editText.getText().toString());
+                            mAdapter.notifyDataSetChanged();
+                        }
+                    }).create().show();
+            }
 		}
 	};
 	@Override
@@ -198,7 +198,7 @@ public class MiniWebCreateActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		
 		topBarContain=new TopBarContain(this)
-			.setContentView(R.layout.activity_miniweb_create);
+		    .setContentView(R.layout.activity_miniweb_create);
 		setContentView(topBarContain);
 		
 		titleEt=(EditText) findViewById(R.id.miniweb_title);
@@ -209,15 +209,15 @@ public class MiniWebCreateActivity extends Activity {
 		
 		findViewById(R.id.miniweb_add_text).setOnClickListener(new View.OnClickListener() {//增加文字
 			public void onClick(View v) {
-				final EditText editText=new EditText(MiniWebCreateActivity.this);
-				new AlertDialog.Builder(MiniWebCreateActivity.this).setTitle(R.string.MiniWeb_Add_Text)
-					.setView(editText).setNegativeButton(android.R.string.cancel, null)
-					.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int which) {
-								miniWebData.addXinxi(editText.getText().toString(), 1);
-								mAdapter.notifyDataSetChanged();
-						}
-					}).create().show();
+            final EditText editText=new EditText(MiniWebCreateActivity.this);
+            new AlertDialog.Builder(MiniWebCreateActivity.this).setTitle(R.string.MiniWeb_Add_Text)
+                .setView(editText).setNegativeButton(android.R.string.cancel, null)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        miniWebData.addXinxi(editText.getText().toString(), 1);
+                        mAdapter.notifyDataSetChanged();
+                    }
+                }).create().show();
 			}
 		});
 		findViewById(R.id.miniweb_add_img_local).setOnClickListener(new View.OnClickListener() {//本地图片

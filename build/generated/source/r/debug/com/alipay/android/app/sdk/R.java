@@ -69,9 +69,9 @@ public final class R {
 		public static final int ensure = 0x7f06001d;
 		public static final int install_alipay = 0x7f060020;
 		public static final int install_msp = 0x7f060021;
-		public static final int processing = 0x7f060026;
-		public static final int redo = 0x7f060027;
-		public static final int refresh = 0x7f060028;
+		public static final int processing = 0x7f060028;
+		public static final int redo = 0x7f060029;
+		public static final int refresh = 0x7f06002a;
 	}
 	public static final class style {
 		public static final int AlertDialog = 0x7f070000;

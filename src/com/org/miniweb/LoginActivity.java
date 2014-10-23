@@ -36,8 +36,8 @@ public class LoginActivity extends Activity {
 			return;
 		}
 		HttpRequestBase httpRequest = RequestFactory.createPost(MyApp.ApiUrl + "Api/login",
-				new BasicNameValuePair("username", userName),
-				new BasicNameValuePair("password", passWord) );
+            new BasicNameValuePair("username", userName),
+            new BasicNameValuePair("password", passWord) );
 		new GsonAsyncTask<User>(this, MyApp.ApiUrl+"Api/login?username="
 			+ userName + "&password=" + passWord)  {
 			@Override
@@ -67,6 +67,9 @@ public class LoginActivity extends Activity {
         if(resultCode == Activity.RESULT_OK) {
             switch (requestCode) {
                 case REQCODE:
+                    ((TextView)findViewById(R.id.username)).setText(data.getStringExtra(RegisterActivity.Extra_UserName));
+                    ((TextView)findViewById(R.id.password)).setText(data.getStringExtra(RegisterActivity.Extra_UserPassword));
+                    findViewById(R.id.login_button).performClick();
                     break;
                 default:
                     break;

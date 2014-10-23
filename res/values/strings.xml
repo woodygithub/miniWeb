@@ -8,6 +8,8 @@
     <string name="new_miniweb">New MiniWeb</string>
     <string name="hot_miniweb">Hot MiniWeb</string>
     <string name="please_fill_out">please fill out username/password</string>
+    <string name="please_confirm_password">please confirm password</string>
+    <string name="password_differ">password differ</string>
     <string name="please_login">please login</string>
     
     <string name="MiniWeb.Title">title</string>

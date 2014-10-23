@@ -6,6 +6,8 @@
     <string name="new_miniweb">新建微页</string>
     <string name="hot_miniweb">热门微页</string>
     <string name="please_fill_out">请填写用户名/密码</string>
+    <string name="please_confirm_password">请确认密码</string>
+    <string name="password_differ">两次密码不一致</string>
     <string name="please_login">请登录!</string>
     
     <string name="MiniWeb.Title">主标题</string>

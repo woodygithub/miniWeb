@@ -260,18 +260,20 @@ containing a value of this type.
         public static final int install_msp=0x7f060021;
         public static final int my_miniweb=0x7f060022;
         public static final int new_miniweb=0x7f060023;
-        public static final int please_fill_out=0x7f060024;
-        public static final int please_login=0x7f060025;
-        public static final int processing=0x7f060026;
-        public static final int redo=0x7f060027;
-        public static final int refresh=0x7f060028;
-        public static final int xlistview_footer_hint_nomore=0x7f060029;
-        public static final int xlistview_footer_hint_normal=0x7f06002a;
-        public static final int xlistview_footer_hint_ready=0x7f06002b;
-        public static final int xlistview_header_hint_loading=0x7f06002c;
-        public static final int xlistview_header_hint_normal=0x7f06002d;
-        public static final int xlistview_header_hint_ready=0x7f06002e;
-        public static final int xlistview_load_error=0x7f06002f;
+        public static final int password_differ=0x7f060024;
+        public static final int please_confirm_password=0x7f060025;
+        public static final int please_fill_out=0x7f060026;
+        public static final int please_login=0x7f060027;
+        public static final int processing=0x7f060028;
+        public static final int redo=0x7f060029;
+        public static final int refresh=0x7f06002a;
+        public static final int xlistview_footer_hint_nomore=0x7f06002b;
+        public static final int xlistview_footer_hint_normal=0x7f06002c;
+        public static final int xlistview_footer_hint_ready=0x7f06002d;
+        public static final int xlistview_header_hint_loading=0x7f06002e;
+        public static final int xlistview_header_hint_normal=0x7f06002f;
+        public static final int xlistview_header_hint_ready=0x7f060030;
+        public static final int xlistview_load_error=0x7f060031;
     }
     public static final class style {
         public static final int AlertDialog=0x7f070000;

@@ -137,16 +137,16 @@ public final class R {
 		public static final int ensure = 0x7f06001d;
 		public static final int install_alipay = 0x7f060020;
 		public static final int install_msp = 0x7f060021;
-		public static final int processing = 0x7f060026;
-		public static final int redo = 0x7f060027;
-		public static final int refresh = 0x7f060028;
-		public static final int xlistview_footer_hint_nomore = 0x7f060029;
-		public static final int xlistview_footer_hint_normal = 0x7f06002a;
-		public static final int xlistview_footer_hint_ready = 0x7f06002b;
-		public static final int xlistview_header_hint_loading = 0x7f06002c;
-		public static final int xlistview_header_hint_normal = 0x7f06002d;
-		public static final int xlistview_header_hint_ready = 0x7f06002e;
-		public static final int xlistview_load_error = 0x7f06002f;
+		public static final int processing = 0x7f060028;
+		public static final int redo = 0x7f060029;
+		public static final int refresh = 0x7f06002a;
+		public static final int xlistview_footer_hint_nomore = 0x7f06002b;
+		public static final int xlistview_footer_hint_normal = 0x7f06002c;
+		public static final int xlistview_footer_hint_ready = 0x7f06002d;
+		public static final int xlistview_header_hint_loading = 0x7f06002e;
+		public static final int xlistview_header_hint_normal = 0x7f06002f;
+		public static final int xlistview_header_hint_ready = 0x7f060030;
+		public static final int xlistview_load_error = 0x7f060031;
 	}
 	public static final class style {
 		public static final int AlertDialog = 0x7f070000;
