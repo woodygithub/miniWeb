@@ -62,6 +62,7 @@ public class MiniWebCreateActivity extends Activity {
 	
 	private boolean isPreView;
 	User user;
+
 	public static void start(Activity activity){
 		activity.startActivity(new Intent().setClass(activity, MiniWebCreateActivity.class));
 	}
@@ -350,9 +351,10 @@ public class MiniWebCreateActivity extends Activity {
 				if(isPreView) convertView.findViewById(android.R.id.icon).setVisibility(View.GONE);
 				else convertView.findViewById(android.R.id.icon).setVisibility(View.VISIBLE);
 			}else{//文字
-				if (convertView == null)
-					convertView = View.inflate(MiniWebCreateActivity.this,
-						R.layout.activity_miniweb_create_item_text,null);
+				if (convertView == null) {
+                    convertView = View.inflate(MiniWebCreateActivity.this,
+                            R.layout.activity_miniweb_create_item_text, null);
+                }
 				((TextView)convertView.findViewById(android.R.id.content)).setText(content.getContent());
 				if(isPreView) convertView.findViewById(android.R.id.icon).setVisibility(View.GONE);
 				else convertView.findViewById(android.R.id.icon).setVisibility(View.VISIBLE);

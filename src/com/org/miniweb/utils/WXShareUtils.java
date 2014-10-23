@@ -14,7 +14,7 @@ import com.tencent.mm.sdk.openapi.WXMediaMessage;
 import com.tencent.mm.sdk.openapi.WXWebpageObject;
 
 public class WXShareUtils {
-	public static final String WX_APP_ID="wx0f8ab129d3a323d4";
+	public static final String WX_APP_ID="wx5711daf42e137b8f";
 	public static void shareUrl(final Context context,final String title,final String desc,final String url){
 		final IWXAPI api=WXAPIFactory.createWXAPI(context, WX_APP_ID);
 		api.registerApp(WX_APP_ID);
@@ -28,7 +28,7 @@ public class WXShareUtils {
 			    msg.title = title;
 			    msg.description = context.getString(R.string.app_name);
 			    //这里替换一张自己工程里的图片资源
-			    Bitmap thumb = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher);
+			    Bitmap thumb = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_miniweb);
 			    msg.setThumbImage(thumb);
 			     
 			    SendMessageToWX.Req req = new SendMessageToWX.Req();

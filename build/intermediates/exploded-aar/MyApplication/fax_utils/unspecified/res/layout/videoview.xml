@@ -30,12 +30,12 @@
         android:fitsSystemWindows="true"
         android:animateLayoutChanges="true"
         >
-        <com.fax.utils.view.media.MediaController
+        <com.woody.wxj.view.media.MediaController
                 android:id="@+id/media_controller"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom">
-        </com.fax.utils.view.media.MediaController>
+        </com.woody.wxj.view.media.MediaController>
     </FrameLayout>
 </FrameLayout>
 
