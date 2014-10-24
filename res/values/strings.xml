@@ -10,13 +10,14 @@
     <string name="please_confirm_password">please confirm password</string>
     <string name="password_differ">password differ</string>
     <string name="please_login">please login</string>
-    
     <string name="MiniWeb.Title">title</string>
     <string name="MiniWeb.Subtitle">subTitle</string>
     <string name="MiniWeb.PreView">preview</string>
     <string name="MiniWeb.Share">share</string>
     <string name="MiniWeb.Add.Text">add text</string>
     <string name="MiniWeb.Edit.Text">edit text</string>
-    
     <string name="Menu.MiniWebCreata">create miniweb</string>
+    <string name="title_activity_my_mini_web">MyMiniWebActivity</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>
