@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.UUID;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -106,7 +105,7 @@ public class MiniWebCreateActivity extends Activity {
 					}
 					
 					map.put("uid", dataBody);
-					String result = HttpUtils.reqForPost(MyApp.ApiUrl+"Articlinfo/prevew", map);
+					String result = HttpUtils.reqForPost(MyApp.ApiUrl+"Articlinfo/bak_prevew", map);
 					return new Gson().fromJson(result, StringData.class);
 				} catch (Exception e) {
 					e.printStackTrace();

@@ -11,6 +11,6 @@ public class MyMiniWebActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_mini_web_activity);
+        //setContentView(R.layout.my_mini_web_activity);
     }
 }
