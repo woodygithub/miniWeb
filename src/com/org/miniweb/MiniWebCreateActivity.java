@@ -91,7 +91,7 @@ public class MiniWebCreateActivity extends Activity {
 					if(images.length>0){
 						File imageZip = getImageFile("image.zip");
 						ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(imageZip));
-						for(File file:images){
+                        for(File file:images){
 							zos.putNextEntry(new ZipEntry(file.getName()));
 							byte[] bytes = new byte[(int) file.length()];
 							FileInputStream fis = new FileInputStream(file);
@@ -119,7 +119,7 @@ public class MiniWebCreateActivity extends Activity {
 				if(result!=null){
 //					Log.w("fax", "result:\n"+result.getData());
 					WXShareUtils.shareUrl(MiniWebCreateActivity.this, miniWebData.getTitle(),
-						miniWebData.getFu_title(), result.getData());
+						miniWebData.getFu_title(), MyApp.ApiUrl + "Articlinfo/weiweb/uid/" + result.getInfo());
 				}
 			}
 		}.setProgressDialog().execute();
