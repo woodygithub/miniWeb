@@ -3,7 +3,6 @@ package com.org.miniweb;
 import android.app.Activity;
 import android.os.Bundle;
 
-
 public class MyMiniWebActivity extends Activity {
 
     @Override

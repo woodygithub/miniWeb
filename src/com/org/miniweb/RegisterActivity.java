@@ -50,7 +50,8 @@ public class RegisterActivity extends Activity {
             }
             @Override
             protected Boolean instanceObject(String json) throws Exception {
-                json.replace(" ","");
+                json = json.replace(" ","");
+                json = json.replace("   ","");
                 return "1".equals(json);
             }
         }.setProgressDialog().execute();

@@ -1,4 +1,4 @@
 /bin/
 /gen
 /*.apk
-/build
+*build

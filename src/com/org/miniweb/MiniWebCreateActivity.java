@@ -3,6 +3,8 @@ package com.org.miniweb;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -13,6 +15,7 @@ import java.util.zip.ZipOutputStream;
 import org.apache.http.entity.mime.content.ContentBody;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.StringBody;
+import org.apache.http.protocol.HTTP;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -84,7 +87,8 @@ public class MiniWebCreateActivity extends Activity {
 				String dataJson=new Gson().toJson(miniWebData);
 				//Log.d("fax", "send:\n"+dataJson);
 				try {
-					StringBody dataBody=new StringBody(dataJson);
+                    //String val = URLEncoder.encode(dataJson, HTTP.UTF_8);
+					StringBody dataBody=new StringBody(dataJson, Charset.forName(HTTP.UTF_8));
 					HashMap<String, ContentBody> map=new HashMap<String, ContentBody>();
 					//准备image.zip
 					File[] images = getSubDir().listFiles();
@@ -119,7 +123,7 @@ public class MiniWebCreateActivity extends Activity {
 				if(result!=null){
 //					Log.w("fax", "result:\n"+result.getData());
 					WXShareUtils.shareUrl(MiniWebCreateActivity.this, miniWebData.getTitle(),
-						miniWebData.getFu_title(), MyApp.ApiUrl + "Articlinfo/weiweb/uid/" + result.getInfo());
+                            miniWebData.getFu_title(), MyApp.ApiUrl + "Articlinfo/weiweb/uid/" + result.getInfo());
 				}
 			}
 		}.setProgressDialog().execute();
